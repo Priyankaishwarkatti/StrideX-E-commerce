@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.nav-bar-menu {
+    right: 0;
+    display: flex ;
+    transition: transform var(--podium-cds-transition-duration-normal);
+    /* visibility: visible; */
+}
+
+
