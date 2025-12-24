@@ -60,7 +60,7 @@ googleSignup.addEventListener('click', function() {
             const credential = GoogleAuthProvider.credentialFromResult(result);
             const user = result.user;
             console.log(user);
-            window.location.href = "../pages/index.html"
+            window.location.href = "index.html"
 
         }).catch((error) => {
             // Handle Errors here.
@@ -85,7 +85,7 @@ onAuthStateChanged(auth, (user) => {
 
     } else {
         showMessage("Create Account and Login!!!", 'signupMessage')
-        window.location.href = '../pages/index.html'
+        window.location.href = 'index.html'
     }
 })
 

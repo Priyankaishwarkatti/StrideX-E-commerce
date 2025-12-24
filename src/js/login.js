@@ -41,7 +41,7 @@ googleLogin.addEventListener('click', function () {
             const credential = GoogleAuthProvider.credentialFromResult(result);
             const user = result.user;
             console.log(user);
-            window.location.href = "../pages/index.html"
+            window.location.href = "index.html"
 
         }).catch((error) => {
             // Handle Errors here.
@@ -70,7 +70,7 @@ signIn.addEventListener('click', (e) => {
         showMessage('Login Successfully!!!', 'loginMessage')
         const user = userCredentials.user
         localStorage.setItem('loggedInUserId', user.uid)
-        window.location.href = '../pages/index.html'
+        window.location.href = 'index.html'
     })  
     .catch((error) => {
         const errorCode = error.code;

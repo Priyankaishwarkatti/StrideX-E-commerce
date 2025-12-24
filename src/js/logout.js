@@ -52,7 +52,7 @@ logoutButton.addEventListener('click', () =>{
     localStorage.removeItem('loggedInUserId')
     signOut(auth)
     .then(() => {
-        window.location.href = '../pages/index.html'
+        window.location.href = 'index.html'
         // hiMessage.classList.add('hidden')
         hiUserProfile.classList.add('hidden')
         userLoginTag.classList.remove('hidden')
